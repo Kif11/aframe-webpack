@@ -1,5 +1,4 @@
 import AFRAME from 'aframe';
-import glowShader from '../shaders/GlowShader';
 const THREE = AFRAME.THREE;
 
 AFRAME.registerComponent('spinner', {

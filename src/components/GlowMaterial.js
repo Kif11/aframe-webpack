@@ -1,6 +1,6 @@
 import AFRAME from 'aframe';
-import glowShader from '../shaders/GlowShader';
-const THREE = AFRAME.THREE;
+import GlowFrag from '../shaders/GlowFrag.glsl';
+import GlowVert from '../shaders/GlowVert.glsl';
 
 AFRAME.registerComponent('glow-material', {
   init: function () {
@@ -14,10 +14,8 @@ AFRAME.registerComponent('glow-material', {
           value: 0
         }
       },
-      vertexShader: glowShader.vertexShaderGlow,
-      fragmentShader: glowShader.fragmentShaderGlow,
-      transparent: true,
-      depthWrite: false
+      vertexShader: GlowVert,
+      fragmentShader: GlowFrag,
     });
 
     const mesh = this.el.object3D.children[0];
