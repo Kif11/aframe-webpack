@@ -1,4 +1,4 @@
-# A-Frame with Webpack Example
+# A-Frame with Webpack and JSX
 
 This project shows:
 
