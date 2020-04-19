@@ -13,3 +13,5 @@ cd aframe-webpack
 yarn install
 yarn start
 ```
+
+Check `controllers` branch for custom Oculus Touch controller setup.
